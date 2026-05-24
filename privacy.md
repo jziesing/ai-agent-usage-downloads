@@ -91,7 +91,7 @@ If the privacy practices ever change (for example, if we add a future optional c
 For privacy questions or to report a concern:
 
 - GitHub Issues: [github.com/jziesing/ai-agent-usage-downloads/issues](https://github.com/jziesing/ai-agent-usage-downloads/issues)
-- Email: [jzdevai@gmail.com](mailto:jzdevai@gmail.com)
+- Email: [jackappledev@gmail.com](mailto:jackappledev@gmail.com)
 
 ---
 

@@ -94,7 +94,7 @@ You're in charge of what's stored, and you can clear it at any time:
 - **Settings → Transcripts → Purge older than 90 days** — deletes transcript turns older than 90 days.
 - **Settings → Transcripts → Clear transcripts** — clears all transcript turns, or just the ones for projects you choose.
 - **Settings → Transcripts → Compact database** — runs a SQLite VACUUM to reclaim disk space after a large delete.
-- **Settings → Clear Local Database** — wipes the usage records, parse cursors, and cached authoritative cost data. (Transcripts and the session digest are managed through the Transcripts controls above.)
+- **Settings → Clear Local Database** — wipes everything the app has stored locally *from your data*: usage records, parse cursors, cached authoritative cost data, the session-metadata digest (including your first/last prompt text), all captured transcripts and their search index, and git correlation data. Your saved dashboards and app preferences are kept (those are configuration, not data). A re-scan rebuilds everything from the on-disk source files.
 - **Settings → Re-grant / revoke Folder Access** — controls which folders the app may read.
 
 ## What providers receive

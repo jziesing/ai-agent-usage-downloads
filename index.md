@@ -6,6 +6,10 @@ description: Track AI agent usage AND understand what your AI is actually doing 
 
 # AI Agent Usage
 
+<p align="center">
+  <img src="assets/screenshots/hero.png" alt="AI Agent Usage — a magnifying lens over a neural network, ringed by token categories: New Features 22M tok, Refactor 12M tok, Bug Fix 10M tok, Docs 6M tok, Learning 5M tok" width="420">
+</p>
+
 **Track AI agent usage AND understand what your AI is actually doing for you** — with insights cards tailored to individuals and managers.
 
 A native macOS app that reads your local Claude Code, Codex CLI, Cursor, and Gemini CLI session files, turns them into cost + token rollups, and — new in v1.1.1 — gives you searchable transcripts and a grid of insights cards that surface patterns in how you work with AI.

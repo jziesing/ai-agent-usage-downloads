@@ -15,7 +15,7 @@ description: Understand what your AI coding agents cost AND what they're actuall
 A native macOS app that reads your local Claude Code, Codex CLI, Cursor, and Gemini CLI session files, turns them into cost + token rollups, and gives you searchable transcripts, ~25 insight cards, and now **custom Dashboards** you can save and revisit.
 
 <p>
-  <a href="https://github.com/jziesing/ai-agent-usage-downloads/releases/latest/download/AI-Agent-Usage.dmg"><strong>Download the DMG (v1.2.0)</strong></a>
+  <a href="https://github.com/jziesing/ai-agent-usage-downloads/releases/latest/download/AI-Agent-Usage.dmg"><strong>Download the DMG (v1.3.0)</strong></a>
   &nbsp;·&nbsp;
   <a href="https://apps.apple.com/us/app/id6770159263">Get it on the App Store</a>
   &nbsp;·&nbsp;
@@ -42,25 +42,33 @@ A native macOS app that reads your local Claude Code, Codex CLI, Cursor, and Gem
 
 ---
 
-## What's new in v1.2.0
+## What's new in v1.3.0
 
-### Dashboards
+### Background mode
 
-A new **Dashboards** tab. Choose which of the ~25 insight cards to show, scope them by project and date range, view spend in tokens or dollars, drag to reorder, and save named dashboards you can reopen any time. Each dashboard is independent — you can have a "this sprint" board scoped to one repo and a "team overview" board side by side.
+Keep AI Agent Usage in your menu bar, optionally open it at login, and turn on an optional daily recap reminder. A menu bar icon is always visible while it's running, and Quit always fully quits.
 
-### One-click GitHub sync
+### Menu bar at a glance
 
-GitHub commits and PRs now sync completely in one click. Previously a rate-limit mid-way through required clicking again; v1.2 handles the limit automatically and picks up where it left off.
+The menu bar popover now shows today's cost, session count, and your top work categories alongside token totals. Pause and resume any time.
 
-### Refreshed design
+### Daily recap & reflection
 
-- New app icon and a cleaner interface throughout.
-- **Insights** and **Output** are now separate sidebar tabs so neither is buried.
-- App-wide text-size control in Settings (useful on high-density displays).
+An optional end-of-day summary of your work with AI — sessions, categories, and cost — plus a one-minute reflection you can jot down. Everything stays on your Mac.
 
-### Improved data safety
+### Morning prompt (opt-in)
 
-"Clear Local Database" now fully erases everything the app has stored locally — usage records, cached cost data, the session-metadata digest, all captured transcripts and their search index, and git correlation data. Your saved Dashboards and app preferences are kept. A re-scan rebuilds everything.
+One gentle suggestion on your first open of the day, drawn only from your own history. Off until you ask for it; always dismissible.
+
+### Richer categorization
+
+A new **Agent ops** work category, plus capability, integration, and deliverable tags you can drill into in Insights.
+
+### Improved
+
+Energy-friendly background refresh that cooperates with macOS App Nap. Private and on-device as always — your prompts, usage, and reflections never leave your Mac.
+
+*Earlier: v1.2 added custom **Dashboards**, one-click GitHub sync, and a refreshed design.*
 
 ---
 

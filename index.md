@@ -44,6 +44,22 @@ A native macOS app that reads your local Claude Code, Codex CLI, Cursor, and Gem
 
 ## What's new in v1.3.0
 
+### Guided first-run
+
+A built-in onboarding walks you from zero to your first insights — connect a tool, grant read-only access, point it at your code folders, and run your first analysis — with optional steps for the menu bar and notifications.
+
+### Streamlined navigation
+
+A cleaner four-tab layout — **Home**, **Usage**, **Insights**, and **Team** — each with focused sub-tabs, plus a top-bar search.
+
+### Notifications, sorted
+
+Setup and status notifications now group into **Unread / Read / All**, with a one-click "mark all read."
+
+### A menu-bar gauge that sticks around
+
+Opt in to keep a compact token/cost gauge in your menu bar even after you close the window — the app keeps running quietly in the background and reopens the full window any time you click in.
+
 ### Background mode
 
 Keep AI Agent Usage in your menu bar, optionally open it at login, and turn on an optional daily recap reminder. A menu bar icon is always visible while it's running, and Quit always fully quits.
@@ -124,9 +140,9 @@ Every session lists the commits and PRs that happened within 6 hours, tagged wit
 - **Full transcripts** — chat-bubble view of every prompt and response, with copy buttons per turn. Tool output is stored under a tiered policy (Bash/WebFetch capped at 8 KB; file Reads skipped because that content is on disk; web searches kept in full) so you keep the substance without bloating disk.
 - **Full-text search** — a Search tab backed by SQLite FTS5. Type a past question or a snippet of an answer and jump to the session, with matched text highlighted.
 
-### Forecast
+### Team
 
-<img src="assets/screenshots/05-forecast.png" alt="Forecast tab" width="680">
+An on-device team rollup — total sessions and shipped work across everyone's local data, deduplicated across providers. No server, no per-keystroke tracking.
 
 ### Setup
 

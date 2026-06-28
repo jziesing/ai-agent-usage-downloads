@@ -6,9 +6,9 @@ description: Privacy policy for the AI Agent Usage macOS app
 
 # Privacy Policy — AI Agent Usage
 
-**Last updated:** 2026-06-09
+**Last updated:** 2026-06-27
 
-This is the privacy policy for **AI Agent Usage**, a macOS application that helps you see how much your AI coding agents (Claude Code, OpenAI Codex CLI, Cursor, Google Gemini CLI) are costing you — and, as of v1.1, understand what those agents are actually doing for you through on-device transcripts and insights. The app is published by Jack Ziesing as an independent developer.
+This is the privacy policy for **AI Agent Usage**, a macOS application that helps you see how much your AI coding agents (Claude Code, OpenAI Codex CLI, Cursor, Google Gemini CLI) are costing you — and understand what those agents are actually doing for you through on-device transcripts and insights. The app is published by Jack Ziesing as an independent developer.
 
 The short version: **we don't collect anything about you.** Everything the app does — including reading your session transcripts and generating insights — runs locally on your Mac. Nothing about your prompts, your code, your commits, or your activity is ever sent to a server we operate. The only network traffic is requests you explicitly authorize: API calls to providers you've connected, GitHub if you connect it, and an optional pricing-data refresh from a static feed.
 
@@ -74,6 +74,16 @@ Network requests only happen for things you explicitly configure:
 
 That's it. No telemetry. No crash reports. No analytics. No "phone home" pings.
 
+## Running in the background (menu bar, notifications & opening at login)
+
+AI Agent Usage can optionally keep running as a menu-bar app and open automatically when you log in. These are **off by default** and controlled in **Settings → Menu Bar** and **Settings → Background**:
+
+- **Menu-bar gauge** — when enabled, the app shows a small token/cost readout in your menu bar and can keep running there after you close its window. It's the same on-device app process; it reads only the local data already described above and sends nothing.
+- **Open at login** — if you choose to keep the menu-bar gauge running, the app registers a standard macOS login item (via `SMAppService`) so it can resume in the menu bar after you restart. You can turn this off anytime, or remove it in **System Settings → General → Login Items**.
+- **Local notifications** — if you allow them, the app posts macOS notifications for setup issues (for example, if folder access stops working) and, if you opt in, your end-of-day recap. These are scheduled and delivered entirely on your Mac by the app; no notification content is sent to us or to any server.
+
+None of these features collect or transmit any data — they only change how and when the on-device app runs.
+
 ## How API keys and tokens are stored
 
 When you paste an Admin API key or a GitHub token, it is stored exclusively in the **macOS Keychain** under our app's identifier (`com.aiagentusage.app`). It is never:
@@ -121,7 +131,9 @@ AI Agent Usage is an independent app. It is not affiliated with, endorsed by, or
 
 If the privacy practices ever change (for example, if we add a future optional cloud sync feature), this page will be updated. Material changes will be noted in the app's release notes.
 
-**What changed in this update (2026-06-09):** disclosed the v1.1 transcript layer — on-device storage of session transcripts, the full-text search index, the session-metadata digest (including verbatim prompt text), git/commit correlation data, and the on-device Foundation Models categorization. Clarified exactly which "Clear" control removes which data. No data is collected or transmitted as a result of these features; they are entirely on-device.
+**What changed in this update (2026-06-27):** disclosed background behaviors — the optional menu-bar gauge, the "open at login" item (registered via `SMAppService`), and locally-scheduled notifications / end-of-day recap. All run entirely on your Mac and collect or transmit nothing new.
+
+**What changed on 2026-06-09:** disclosed the v1.1 transcript layer — on-device storage of session transcripts, the full-text search index, the session-metadata digest (including verbatim prompt text), git/commit correlation data, and the on-device Foundation Models categorization. Clarified exactly which "Clear" control removes which data. No data is collected or transmitted as a result of these features; they are entirely on-device.
 
 ## Contact
 

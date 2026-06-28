@@ -10,12 +10,13 @@ The landing page references these files by exact name. Use the same filename and
 
 | File | What it should show |
 | --- | --- |
-| `01-usage-overview.png` | Home → Usage tab. Per-provider cost and token rollups (the cost-tracking baseline). |
-| `02-insights-grid.png` | Output tab → Insights grid, zoomed out so the spread of individual + manager cards is visible at once. |
-| `03-repeat-prompts-card.png` | Repeat Prompts card expanded into its modal, showing clustered prompts and session drilldown. |
-| `04-tasks-you-could-learn.png` | Tasks You Could Learn card after the on-device LLM has produced its summary. |
-| `05-search-tab.png` | Search tab with a full-text query entered, a result snippet visible, and a session selected. |
-| `06-settings-transcripts.png` | Settings → Transcripts section showing storage stats, the capture toggle, purge, and compact controls. |
+| `hero.png` | The hero graphic — a magnifying lens over a neural network, ringed by token categories. |
+| `01-home.png` | Home — KPI cards, spend-over-time chart, and provider/date filters. |
+| `02-insights.png` | Insights grid — individual + manager cards (cost, patterns, git attribution). |
+| `03-dashboards.png` | Dashboards — a saved dashboard scoped by project + date with a custom card selection. |
+| `04-output.png` | Output — session list with git-linked commits and confidence bands. |
+| `05-forecast.png` | Forecast — spend projections with confidence bands over 1w / 1m / 3m / 1y. |
+| `06-setup.png` | Setup — data sources, GitHub token, and git folder configuration. |
 
 ## Recommended dimensions
 
